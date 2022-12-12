@@ -10,16 +10,17 @@ const server = http.createServer(async (req, res) => {
         
         // getting the country from the header sent on the request
         country = JSON.stringify(req.headers.country);
-
+        
         /** Here we would call a controller or a simple function..
         * ..to use the country we just get on variable country..
         * ..and filter the needed data to return below.
         */
+        message = `Returning data for ${country}`;
 
         // GET request returns
         res.write("Greenbook test api");
         res.write("\n");
-        res.write(country);
+        res.write(message);
 
         res.end();
     } else {

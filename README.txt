@@ -1,0 +1,1 @@
+To run this server you only need install NodeJs on your system than run this command: "node app.js"
